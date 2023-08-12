@@ -11,6 +11,7 @@ namespace _NET_7_WEB_API___ENTITY_FRAMEWORK_JUMPSTART
         {
             CreateMap<Character, GetCharacterDto>();
             CreateMap<AddCharacterDto, Character>();
+            CreateMap<UpdateCharacterDto, Character>();
         }
     }
 }
