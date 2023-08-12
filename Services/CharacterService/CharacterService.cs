@@ -22,6 +22,7 @@ namespace Services.CharacterService
         public async Task<List<Character>> GetAllCharacters()
         {
             return characters;
+            hello
         }
 
         public async Task<Character> GetCharacterById(int id)
