@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = ".NET-7-WEB-API---ENTITY-FRAMEWORK-JUMPSTART", ".NET-7-WEB-API---ENTITY-FRAMEWORK-JUMPSTART.csproj", "{89ECF1A5-6566-4B37-80DF-E9B27E0BF8C9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89ECF1A5-6566-4B37-80DF-E9B27E0BF8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ECF1A5-6566-4B37-80DF-E9B27E0BF8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ECF1A5-6566-4B37-80DF-E9B27E0BF8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ECF1A5-6566-4B37-80DF-E9B27E0BF8C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {034EBB2D-559A-4E25-A634-6B89B5F0A86D}
+	EndGlobalSection
+EndGlobal
