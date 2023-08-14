@@ -1,0 +1,56 @@
+1. Authentication Repository
+
+   For the implementation of the Authentication, we are using the Repository Pattern.
+   You already know a little bit from our data context and we are actually using this Pattern alreay with our Character
+   Service.
+
+
+   Repository : Repositories are classes or components that encapsulate the logic required to access data sources. They
+                centralize common data access functionality, providing better maintainability and decoupling the infrastructure or technology used to access databases from the
+                domain model layer.
+
+
+2. Token Authentication with JSON Web Token
+
+   - The idea behind token Authentication is simple. If the user needs to call a function where she needs to be authenticated, she would have to send the credentials again & again.
+     That's because web service is stateless. This means, we never know who sent the requests unless we get some credentials with that request.
+
+     Instead of entering the credentials every single time with every request, we could start the username and password in the local or session storage of the browser and grab
+     the information from there. But that's highly insecure because everybody who has access to your computer could have a glance at your password.
+
+     A token is nothing more than a long string that stores information or claims of the user.
+
+      These claims do not consist of the password, but it could tell the server who the user is and what
+
+      kind of rights the user might have.
+
+      The token is generated with a private key.
+
+      Only the server knows, so it's hard to fake such a token and we give that token an expiration date.
+
+      So even if someone would be able to steal your token, chances are that the token is invalid as soon
+
+      as this certain someone tries to use it.
+
+      Since this token doesn't consist of critical information in plain text, we can store it in the browser
+
+      and automatically send it to the web service with every requset.
+
+      The service then knows who the user is and may even send a new token back for your next request.
+
+      On the website JWT i o.
+
+      We are able to have a look at a JSON web token and even how the information is stored in it.
+
+      You see the header with the used algorithm and the payload with claims like the username for instance.
+
+      Okay, let's use JSON web tokens now for our web API.
+
+
+      ------------------------------------------------
+      ControllerBase Class
+
+
+      // this user object provides all the claims we added to the JSON web token.
+        public ClaimsPrincipal User { get; }
+

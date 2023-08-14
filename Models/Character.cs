@@ -21,5 +21,7 @@ namespace Models
 
         public RpgClass Class { get; set; }
 
+        public User? User { get; set; }
+
     }
 }
