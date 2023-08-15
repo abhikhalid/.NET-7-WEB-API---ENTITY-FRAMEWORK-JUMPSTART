@@ -35,6 +35,8 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 //Registering our character service
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
+//Adds a default implementation for the IHttpContextAccessor service.
+builder.Services.AddHttpContextAccessor();
 //registering dbContext
 builder.Services.AddDbContext<DataContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
