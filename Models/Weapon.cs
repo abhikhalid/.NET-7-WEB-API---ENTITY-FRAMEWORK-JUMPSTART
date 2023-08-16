@@ -13,7 +13,7 @@ namespace Models
 
         public int Damage { get; set; }
 
-        public Character? Character { get; set; }
+        public Character? Character { get; set; } 
         public int CharacterId { get; set; }
     }
 }

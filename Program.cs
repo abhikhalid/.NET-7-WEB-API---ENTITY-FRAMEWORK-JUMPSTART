@@ -4,12 +4,13 @@ global using Dtos.Character;
 global using AutoMapper;
 global using Microsoft.EntityFrameworkCore;
 global using Services.WeaponService;
+global using Services.FightService;
+
 using Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Swashbuckle.AspNetCore.Filters;
 using Microsoft.OpenApi.Models;
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,6 +38,7 @@ builder.Services.AddAutoMapper(typeof(Program).Assembly);
 //Registering our character service
 builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IWeaponService, WeaponService>();
+builder.Services.AddScoped<IFightService, FightService>();
 builder.Services.AddScoped<IAuthRepository, AuthRepository>();
 //Adds a default implementation for the IHttpContextAccessor service.
 builder.Services.AddHttpContextAccessor();
