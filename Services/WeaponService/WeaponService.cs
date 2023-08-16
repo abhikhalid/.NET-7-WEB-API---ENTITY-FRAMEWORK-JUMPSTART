@@ -27,12 +27,12 @@ namespace Services.WeaponService
 
             try
             {
-                var character = _context.Characters
+                var character = await _context.Characters
                                 .FirstOrDefaultAsync(c => c.Id == newWeapon.CharacterId
                                 && c.User!.Id == int.Parse(_httpContextAccessor.HttpContext!.User
                                 .FindFirstValue(ClaimTypes.NameIdentifier)!));
 
-
+ 
                 if (character is null)
                 {
                     response.Success = false;

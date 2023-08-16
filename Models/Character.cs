@@ -18,9 +18,6 @@ namespace Models
 
         public Weapon? Weapon { get; set; }
 
-        public static implicit operator Character(Task<Character?> v)
-        {
-            throw new NotImplementedException();
-        }
+        public List<Skill>? Skills { get; set; }
     }
 }
