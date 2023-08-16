@@ -31,5 +31,12 @@ namespace Controllers
         {
           return Ok(await _fightService.SkillAttack(request));
         }
+
+        // default post call of this controller
+        [HttpPost]
+        public async Task<ActionResult<ServiceResponse<FightRequestDto>>> Fight(FightRequestDto request)
+        {
+          return Ok(await _fightService.Fight(request));
+        }
     }
 }
