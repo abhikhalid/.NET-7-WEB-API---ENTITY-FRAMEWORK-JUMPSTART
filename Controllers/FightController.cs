@@ -38,5 +38,11 @@ namespace Controllers
         {
           return Ok(await _fightService.Fight(request));
         }
+
+        [HttpGet]
+        public async Task<ActionResult<ServiceResponse<List<HighscoreDto>>>> GetHighScore()
+        {
+          return Ok(await _fightService.GetHighScore());
+        }
     }
 }
