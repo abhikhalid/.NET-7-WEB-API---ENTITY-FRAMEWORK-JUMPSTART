@@ -36,6 +36,9 @@ https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/
 
 dotnet watch run
 
+-- to ignore git files
+
+dotnet new gitignore
 
 dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
 
