@@ -1,0 +1,18 @@
+i. One to One Relationship e Weapon, Character sara thakete pare na.
+   tay AddWeaponDTO te name, damage , characterId pass korsi.
+
+   Weapon create korar somoy y tay bole dite hosse characterID.
+
+ii. Character & Skill, Many to many relationship e Skill add er somoy
+    AddSkillDTO te name, damage pass korely hobe. coz eta independent.
+
+   many to many relationship e Character & Skill niye separte table hobe.
+
+   whereas, one to one and one to many er khetre single table ey foreign key
+    establish hobe.
+
+
+iii. Many to Many relationship e Skill pore add korsi Character er sathe.
+     tokhon characterId, SkillId pass korsi AddCharacterSkillDTO te.
+
+iv.  
