@@ -20,7 +20,7 @@ dotnet ef
 dotnet ef -h
 dotnet ef migrations add InitialCommit
 
-
+dotnet ef database update
 
 
 https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection#readme-body-tab
