@@ -10,6 +10,8 @@ Tools need to be installed
 
 ----------------------------------------------------------------------------
 
+dotnet new webapi
+
 dotnet add package Microsoft.EntityFrameworkCore --version 8.0.0-preview.7.23375.4
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 7.0.10
 dotnet add package Microsoft.EntityFrameworkCore.Design
